@@ -114,7 +114,7 @@ final class EventStoreFactory implements RequiresConfig, RequiresMandatoryOption
     /**
      * @inheritdoc
      */
-    public function defaultOptions()
+    public function defaultOptions(): iterable
     {
         return [
             'metadata_enrichers' => [],

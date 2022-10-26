@@ -24,16 +24,16 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "~5.5|~7.0",
+        "php": "^8.0",
         "beberlei/assert": "~2.3",
-        "prooph/common" : "~3.7"
+        "prooph/common" : "dev-3.x-php8 as 3.7.2"
     },
     "require-dev": {
         "container-interop/container-interop": "^1.1",
-        "sandrokeil/interop-config": "^1.0",
+        "sandrokeil/interop-config": "^2.0",
         "ramsey/uuid" : "~2.8",
         "phpunit/phpunit": "~4.8",
-        "friendsofphp/php-cs-fixer": "^1.12.0",
+        "friendsofphp/php-cs-fixer": "^2.19",
         "satooshi/php-coveralls": "^1.0",
         "zendframework/zend-servicemanager": "~2.6",
         "tobiju/bookdown-bootswatch-templates": "^1.0",
@@ -52,7 +52,7 @@
         "prooph/snapshot-mongodb-adapter": "For usage with mongodb as snapshot adapter"
     },
     "conflict": {
-        "sandrokeil/interop-config": "<1.0"
+        "sandrokeil/interop-config": "<2.0"
     },
     "autoload": {
         "psr-4": {
@@ -72,5 +72,11 @@
         "cs": "php-cs-fixer fix -v --diff --dry-run",
         "cs-fix": "php-cs-fixer fix -v --diff",
         "test": "phpunit"
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/ITNetworkParis/common"
+        }
+    ]
 }
