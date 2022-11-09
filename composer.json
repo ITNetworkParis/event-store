@@ -76,7 +76,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/ITNetworkParis/common"
+            "url": "https://github.com/ITNetworkParis/event-store-common"
         }
     ]
 }
